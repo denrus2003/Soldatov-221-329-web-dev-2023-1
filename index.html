@@ -1,88 +1,121 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <title>Веб-разработчик</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header class="header">
-            <div class="container">
-                <nav class="main-menu">
-                    <ul>
-                        <li><a href="#about">Обо мне</a></li>
-                        <li><a href="#skills">Навыки</a></li>
-                        <li><a href="#technologies">Технологии</a></li>
-                    </ul>
-                </nav>
-                <div class="text-center">
-                    <h1 class="text-upper">Иванов Иванович Иванович</h1>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                        Debitis fugit delectus iure suscipit vitae ducimus, nam cupiditate itaque.
-                    </p>
-                    <a class="btn-white btn" href="mailto:ivan@ivanov.ru">Написать мне</a>
-                </div>
-            </div>
-        </header>
-
-        <main>
-            <div class="container">
-                <section id="about">
-                    <h2>Обо мне</h2>
-
-                    <figure class="avatar">
-                        <img src="images/person.png" alt="Person">
-                    </figure>
-    
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, nisi. Libero, 
-                        delectus? Dolor mollitia nam et dolorum numquam qui enim deserunt incidunt optio! 
-                        Minima quia, explicabo unde sint praesentium tempore.
-                    </p>
-
-                    <a class="btn" href="about.html">Подробнее</a>
-                </section>
-    
-                <section id="skills">
-                    <h2>Навыки</h2>
-                
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, nisi. Libero,
-                        delectus? Dolor mollitia nam et dolorum numquam qui enim deserunt incidunt optio!
-                        Minima quia, explicabo unde sint praesentium tempore.
-                    </p>
-
-                    <a class="btn" href="skills.html">Подробнее</a>
-                </section>
-    
-                <section id="technologies">
-                    <h2>Технологии</h2>
-                
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, nisi. Libero,
-                        delectus? Dolor mollitia nam et dolorum numquam qui enim deserunt incidunt optio!
-                        Minima quia, explicabo unde sint praesentium tempore.
-                    </p>
-
-                    <ol>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                    </ol>
-
-                    <a class="btn" href="techologies.html">Подробнее</a>
-                </section>
-            </div>
-        </main>
-
-        <footer class="footer">
-            <div class="container">
-                &copy; Иванов И. И.
-            </div>
-        </footer>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <title>Домашняя страница</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+        header ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        header li {
+            float: left;
+        }
+        header li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        header li a:hover {
+            background-color: #111;
+        }
+        main {
+            padding: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            max-height: 300px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            text-align: left;
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        footer a {
+            color: #fff;
+            transition: color 0.3s ease;
+        }
+        footer a:hover {
+            color: #00f;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="#">Обо мне</a></li>
+            <li><a href="#">Интересы</a></li>
+            <li><a href="#">Навыки</a></li>
+            <li><a href="#">Умения</a></li>
+        </ul>
+    </header>
+    <main>
+        <h1>Здравствуйте, меня зовут Денис</h1>
+        <img src="images/05-1.jpg" alt="Моя фотография">
+        <table>
+            <thead>
+                <tr>
+                    <th>Тип навыка</th>
+                    <th>Какой навык</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Web-разработка</td>
+                    <td>HTML/CSS</td>
+                </tr>
+                <tr>
+                    <td>Разработка настольных прилложений</td>
+                    <td>С++</td>
+                    <td>Python</td>
+                    
+                </tr>
+                <tr>
+                    <td>Разработка мобильных прилложений</td>
+                    <td>Swift</td>
+                    <td>Kotlin</td>
+                </tr>
+                <tr>
+                    <td>Иностранные языки</td>
+                    <td>Английский</td>
+                    <td>Шведский</td>
+                    <td>Чешский</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <p>Копирайт © 2023</p>
+        <p>Контактная информация: <a href="mailto:denverrus2003@gmail.com">denverrus2003@gmail.com</a></p>
+    </footer>
+</body>
 </html>
